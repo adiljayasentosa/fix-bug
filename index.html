@@ -295,6 +295,21 @@
   <div id="qrcode"></div>
 
   <button onclick="downloadQR()">Download QR</button>
+  <script>
+function downloadQR() {
+    const canvas = document.querySelector("#qrcode canvas");
+
+    if (!canvas) {
+        alert("QR belum ditemukan!");
+        return;
+    }
+
+    const link = document.createElement("a");
+    link.download = "QR-KerajinanAlam.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+}
+  </script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
