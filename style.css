@@ -1124,3 +1124,13 @@ h1, h2, h3 {
   .dokumen-grid { grid-template-columns: 1fr; }
   .dokumen-card--img { grid-column: span 1; min-height: 180px; }
 }
+
+#qrcode{
+    width: fit-content;
+    margin:20px auto;
+}
+
+#qrcode canvas,
+#qrcode img{
+    display:block;
+}
