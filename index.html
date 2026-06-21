@@ -292,6 +292,17 @@
     </div>
   </footer>
 
+  <div id="qrcode"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+    text: "https://adiljayasentosa.github.io/fix-bug/",
+    width: 200,
+    height: 200
+});
+  </script>
+
   <script>
     // Mobile menu toggle
     // ── Navbar & Mobile Menu ───────────────────────────────
@@ -327,6 +338,8 @@
     window.addEventListener('scroll', () => {
       document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 40);
     });
+
+    
   </script>
 </body>
 </html>
